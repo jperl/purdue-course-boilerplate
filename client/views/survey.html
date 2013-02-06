@@ -1,0 +1,60 @@
+<template name="survey">
+    {{>top}}
+
+    <div class="row">
+
+        <!-- Survey Questions -->
+
+        <div class="nine columns">
+
+            <h3>A few quick questions for you {{userName}}</h3>
+
+            <p>Changes are auto-saved</p>
+
+            <div class="row collapse">
+                <!--<div class="two columns"><label class="inline">Your Name</label></div>-->
+                <!--<div class="ten columns"><input type="text" id="yourName" placeholder="Jane Smith"></div>-->
+                <div class="row collapse">
+                    <div class="two columns"><label class="inline">Your Email</label></div>
+                    <div class="ten columns">
+                        <input id="a0" TABINDEX="0" class="question" type="text" placeholder="jane@purdue.edu"
+                               value="{{index currentSurvey.answers 0}}" >
+                    </div>
+
+                    <label>Do you have enough HTML5 and Javascript experience to make it through the <a
+                            href="http://www.codecademy.com/tracks/web" target="_blank">web fundamentals</a>, <a
+                            href="http://www.codecademy.com/tracks/jquery" target="_blank">jquery</a>, and <a
+                            href="http://www.codecademy.com/tracks/javascript" target="_blank">javascript</a> codecademy
+                        tracks?</label>
+                    <textarea id="a1" TABINDEX="1"
+                              placeholder='If yes: how did you get that experience? If no: go through the tracks and write "I am working on it" and then "I completed them" when you are done.'
+                              class="question" rows="4">{{index currentSurvey.answers 1}}</textarea>
+
+                    <label>Please tell us in one or two sentences about the most impressive thing you have built or achieved.</label>
+                    <textarea id="a2" TABINDEX="2" class="question" rows="4">{{index
+                        currentSurvey.answers 2}}</textarea>
+
+                    <label>What do you want to build?</label>
+                    <textarea id="a3" TABINDEX="3"
+                              placeholder="You don't have to stick with this but everyone needs to come with at least one idea"
+                              class="question" rows="4">{{index currentSurvey.answers 3}}</textarea>
+
+                    <label>Do you have any ideas you would be willing to let other teams build?</label>
+                    <textarea id="a4" TABINDEX="4" placeholder="One line descriptions please" class="question" rows="4">{{index
+                        currentSurvey.answers 4}}</textarea>
+
+                    <label>Why do you want to take this class?</label>
+                    <textarea id="a5" TABINDEX="5" placeholder="This will not affect your acceptance. I'm just curious"
+                              class="question"
+                              rows="4">{{index currentSurvey.answers 5}}</textarea>
+                </div>
+            </div>
+
+            <button id="logout" TABINDEX="6" class="radius button">Log Out</button>
+        </div>
+
+        <!-- End Survey Questions -->
+    </div>
+
+    {{>footer}}
+</template>

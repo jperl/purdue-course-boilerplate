@@ -1,27 +1,25 @@
 <template name="front">
-    <div class="row">
-        <div class="three columns">
-            <h1><img src="pulogo.png"></h1>
-        </div>
-    </div>
+    {{>top}}
 
     <!-- Main Content Section -->
     <div class="row">
         <div class="six columns">
             <div class="bannerVideo">
-                <iframe src="http://www.youtube.com/embed/XQu8TTBmGhA" frameborder="0" allowfullscreen></iframe>
+                <iframe src="http://www.youtube.com/embed/Y5nLfrYWrZ0?rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
 
             <div class="panel">
-                <h5><a href="http://www.linkedin.com/in/jsperl/" target="_blank">Who is this Jon Perl dude?</a></h5>
+                <h5><a href="http://www.linkedin.com/in/jsperl/" target="_blank">Who is Jon Perl?</a></h5>
             </div>
         </div>
 
         <div class="six columns">
 
             <div class="panel">
-                <h4>Entrepreneurial Web Development</h4>
-                <h5 class="subheader">Learn the latest web technologies and build a <a href="http://www.slideshare.net/startuplessonslearned/minimum-viable-product" target="_blank">minimally viable product</a></h5>
+                <h4>Web & Mobile Startups</h4>
+                <h5 class="subheader">Utilize the latest web and mobile technologies to build a <a
+                        href="http://www.slideshare.net/startuplessonslearned/minimum-viable-product" target="_blank">minimally
+                    viable product</a></h5>
             </div>
 
             <div class="row">
@@ -36,10 +34,31 @@
                 <div class="six mobile-two columns">
                     <div class="panel">
                         <h5>Responsive Design</h5>
-                        <h6 class="subheader">Design applications to work in all form factors (phone / tablet / desktop)</h6>
-                        <a href="http://blog.teamtreehouse.com/beginners-guide-to-responsive-web-design" target="_blank" class="small button">Guide</a>
+                        <h6 class="subheader">Design applications to work in all form factors (phone / tablet /
+                            desktop)</h6>
+                        <a href="http://blog.teamtreehouse.com/beginners-guide-to-responsive-web-design" target="_blank"
+                           class="small button">Guide</a>
                     </div>
                 </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Summary Panel -->
+    <div class="row">
+        <div class="twelve columns">
+
+            <div class="panel">
+                <h4>About the Course</h4>
+
+                <p>Success in a tech startup has two ingredients: a product which adds significant value + traction.
+                    This class will help get you from an idea to a product so you can start to get traction. You will
+                    get strategy advice on your ideas, utilize the latest web and mobile technologies, and be matched up
+                    with other talented individuals to build a product. You will retain all rights to software you created in this class (it will not be
+                    owned by Purdue). This will be a two credit hour pass/fail course. If you make it into the class I
+                    am confident you will pass.
+                </p>
             </div>
 
         </div>
@@ -54,8 +73,10 @@
 
                 <div class="row">
                     <div class="nine columns">
-                        <p>I am limiting this course to passionate developers to ensure teams are effective.
-                            Apply by signing in with your github account and filling out a brief survey.</p>
+                        <p>I am limiting this course to passionate and talented developers to ensure teams are
+                            effective. I will only offer the class if I can approve a minimum of 6 people, the maximum
+                            will be somewhere between 9-12 people. Apply by signing in with your github account and filling
+                            out a brief survey.</p>
                     </div>
                     <div class="three columns">
                         <a id="apply" href="#" class="radius button right">Apply</a>
@@ -66,25 +87,5 @@
         </div>
     </div>
 
-
-    <!-- Footer -->
-
-    <footer class="row">
-        <div class="twelve columns">
-            <hr/>
-            <div class="row">
-                <div class="six columns">
-                    <p>&copy; Copyright no one at all. Go to town.</p>
-                </div>
-                <div class="six columns">
-                    <ul class="link-list right">
-                        <li><a href="https://github.com/jperl/purdue-course-boilerplate" target="_blank"c>Fork This Site</a></li>
-                        <li><a href="https://twitter.com/jon_perl" target="_blank">My Twitter</a></li>
-                        <li><a href="http://docs.meteor.com" target="_blank">Meteor Docs</a></li>
-                        <li><a href="http://foundation.zurb.com" target="_blank">Built with Zurb</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {{>footer}}
 </template>
